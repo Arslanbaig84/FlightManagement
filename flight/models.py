@@ -18,6 +18,7 @@ class Flight(BaseModel):
     ])
     departure = models.TimeField()
     landing = models.TimeField()
+    capacity = models.PositiveSmallIntegerField()
     duration = models.PositiveIntegerField()
 
     def __str__(self) -> str:
