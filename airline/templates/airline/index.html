@@ -1,0 +1,12 @@
+{% extends 'base/layout.html' %}
+
+{% block title %}
+Airlines
+{% endblock %}
+
+{% block body %}
+    {% for dataairline in dataairlines %}
+        {{dataairline}}
+        <br>
+    {% endfor %}
+{% endblock %}
