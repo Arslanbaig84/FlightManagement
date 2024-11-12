@@ -1,0 +1,10 @@
+{% extends 'base/layout.html' %}
+{% block title %}
+Flights
+{% endblock %}
+{% block body %}
+{% for flight in flights %}
+    {{flight}}
+    <br>
+{% endfor %}
+{% endblock %}

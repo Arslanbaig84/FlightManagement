@@ -3,4 +3,5 @@ from flight.models import Flight
 
 # Create your views here.
 def flights(request):
-    pass
+    flights = Flight.objects.all()
+    return render (request, 'flight/index.html', {'flights': flights})
