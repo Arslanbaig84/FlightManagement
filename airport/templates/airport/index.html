@@ -1,0 +1,10 @@
+{% extends 'base/layout.html' %}
+{% block title %}
+Airports
+{% endblock %}
+{% block body %}
+{% for airport in airports %}
+    {{airport}}
+    <br>
+{% endfor %}
+{% endblock %}

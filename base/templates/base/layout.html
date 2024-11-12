@@ -8,8 +8,8 @@
 <body>
     <nav>
         <a href="/">Home</a>
-        <a href="#">Flight</a>
-        <a href="#">Airport</a>
+        <a href="{% url 'flights' %}">Flight</a>
+        <a href="{% url 'airports' %}">Airport</a>
         <a href="{% url 'airlines' %}">Airlines</a>
     </nav>
     {% block body %}
