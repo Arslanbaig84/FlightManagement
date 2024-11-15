@@ -1,6 +1,6 @@
 {% extends 'base/layout.html' %}
 {% block title %}
-Flights
+{{flight.origin.code}} to {{flight.destination.code}}
 {% endblock %}
 {% block body %}
     {{flight}}
