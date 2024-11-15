@@ -4,5 +4,9 @@ from .models import Airline
 
 # Create your views here.
 def airlines(request):
-    dataairlines = Airline.objects.all()
-    return render(request, 'airline/index.html', {'dataairlines':dataairlines})
+    airlines = Airline.objects.all()
+    return render(request, 'airline/index.html', {'airlines':airlines})
+
+def airline(request, code):
+    airline = Airline.objects.get(code=code)
+    return render(request, 'airline/airline.html', {'airline':airline})
