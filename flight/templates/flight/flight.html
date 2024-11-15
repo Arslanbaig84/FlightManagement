@@ -4,9 +4,7 @@ Flights
 {% endblock %}
 {% block body %}
 {% for flight in flights %}
-    <a href="{% url 'flight' code=flight.code %}">
-        {{flight}} {{flight.code}}
-    </a>
+    {{flight}}
     <br>
 {% endfor %}
 {% endblock %}
