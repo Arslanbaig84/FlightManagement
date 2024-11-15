@@ -5,8 +5,10 @@ Airlines
 {% endblock %}
 
 {% block body %}
-    {% for dataairline in dataairlines %}
-        {{dataairline}}
+    {% for airline in airlines %}
+    <a href="{% url 'airline' code=airline.code %}">
+        {{airline}} {{airline.code}}
         <br>
+    </a>
     {% endfor %}
 {% endblock %}

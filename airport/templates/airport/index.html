@@ -4,7 +4,9 @@ Airports
 {% endblock %}
 {% block body %}
 {% for airport in airports %}
-    {{airport}}
-    <br>
+    <a href="{% url 'airport' code=airport.code %}">
+        {{airport}} {{airport.code}}
+        <br>
+    </a>
 {% endfor %}
 {% endblock %}
